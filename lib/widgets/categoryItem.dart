@@ -16,20 +16,34 @@ class CategoryItem extends StatelessWidget {
         Navigator.pushNamed(context, categoryModel.distnation);
       },
       child: Container(
-        height: 70,
+        height: 220,
         color: categoryModel.color,
-        child: Align(
-          alignment: Alignment.centerLeft,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 16),
-            child: Text(
-              categoryModel.text,
-              style: const TextStyle(
-                fontSize: 20,
-                color: Colors.white,
+        child: Column(
+          children: [
+            Align(
+              alignment: Alignment.topCenter,
+              child: Padding(
+                padding: const EdgeInsets.only(top: 16),
+                child: Text(
+                  categoryModel.text,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
-          ),
+            Container(
+              height: 165,
+              width: 230,
+              color: Colors.white,
+              child: SizedBox(
+                height: 160,
+                width: 250,
+                child: Image(image: AssetImage(categoryModel.image)),
+              ),
+            )
+          ],
         ),
       ),
     );
