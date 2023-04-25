@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tuko/models/phrasesModel.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class PhrasesItem extends StatelessWidget {
   const PhrasesItem({
@@ -36,7 +37,10 @@ class PhrasesItem extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 4),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  final player = AudioPlayer();
+                  player.play(AssetSource(phrasesModel.audio));
+                },
                 icon: const Icon(
                   Icons.play_arrow,
                   color: Colors.white,

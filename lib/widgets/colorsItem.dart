@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:tuko/models/colorsModel.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class ColorsItem extends StatelessWidget {
   const ColorsItem({
     super.key,
     required this.colorsModel,
   });
-  final ColorsModel colorsModel ;
+  final ColorsModel colorsModel;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,10 @@ class ColorsItem extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  final player = AudioPlayer();
+                  player.play(AssetSource(colorsModel.audio));
+                },
                 icon: const Icon(
                   Icons.play_arrow,
                   color: Colors.white,
