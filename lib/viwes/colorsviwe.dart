@@ -25,7 +25,7 @@ class ColorsViwe extends StatelessWidget {
     const ColorsModel(
         japText: "Gure",
         enText: "Gray",
-        audio: "assets/sounds/colors/gray.wav",
+        audio: "sounds/colors/gray.wav",
         image: "assets/images/colors/color_gray.png"),
     const ColorsModel(
         japText: "Midori",
@@ -40,7 +40,7 @@ class ColorsViwe extends StatelessWidget {
     const ColorsModel(
         japText: "Shiroi",
         enText: "White",
-        audio: "assets/sounds/colors/white.wav",
+        audio: "sounds/colors/white.wav",
         image: "assets/images/colors/color_white.png"),
     const ColorsModel(
         japText: "Kiiro",

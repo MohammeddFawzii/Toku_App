@@ -15,7 +15,7 @@ class NumbersViwe extends StatelessWidget {
     const NumberModel(
         japText: "Ni",
         enText: "Two",
-        image: "assets/images/numbers/number_one.png",
+        image: "assets/images/numbers/number_two.png",
         audio: "sounds/numbers/number_two_sound.mp3"),
     const NumberModel(
       japText: "San",

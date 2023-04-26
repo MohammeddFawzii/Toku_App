@@ -10,7 +10,7 @@ class PhrasesViwe extends StatelessWidget {
     const PhrasesModel(
         japText: "Kédoku suru koto o wasurenaide kudasai",
         audio: "sounds/phrases/dont_forget_to_subscribe.wav",
-        enText: "dont forget to subscribe"),
+        enText: "dont forget to support"),
     const PhrasesModel(
         japText: "Watashi wa puroguramingu ga daisukidesu ",
         audio: "sounds/phrases/i_love_programming.wav",
